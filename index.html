@@ -1,12 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yuuki | Engineer Portfolio (RPG)</title>
+  <meta name="description" content="RPG風のエンジニアポートフォリオ。ASP.NET Core × React / TypeScript を中心に実装力を可視化。" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <h1>My Portfolio</h1>
-    <p>GitHub: <a href="https://github.com/Yuuki6152">@Yuuki6152</a></p>
+  <!-- 背景装飾 -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__badge">Lv</div>
+        <div class="brand__text">
+          <div class="brand__name">YUUKI</div>
+          <div class="brand__role">Full-stack Candidate / System Dev</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#status">STATUS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#quests">QUESTS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="panel hero">
+      <div class="hero__left">
+        <div class="title">
+          <h1 class="title__main">ENGINEER PORTFOLIO</h1>
+          <p class="title__sub">RPG UI / Engineer Style</p>
+        </div>
+
+        <div class="identity">
+          <div class="identity__name">悠貴（Yuuki）</div>
+          <div class="identity__meta">
+            <span class="chip">ASP.NET Core MVC</span>
+            <span class="chip">React</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">SQL Server</span>
+          </div>
+          <p class="identity__desc">
+            業務系フルスタック志向。Web開発を軸に「設計 → 実装 → 公開」まで自走できる技術者を目指しています。
+            学習は “作って理解する” を重視し、成果物で可視化します。
+          </p>
+        </div>
+
+        <div class="hero__cta">
+          <a class="btn" href="#projects">▶ 実績を見る</a>
+          <a class="btn btn--ghost" href="https://github.com/Yuuki6152" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <!-- RPG ステータスパネル -->
+        <div class="panel panel--inner" id="status">
+          <div class="panel__head">
+            <div class="panel__title">STATUS</div>
+            <div class="panel__tag">Build: Portfolio v1</div>
+          </div>
+
+          <div class="status">
+            <div class="status__row">
+              <div class="status__label">CLASS</div>
+              <div class="status__value">System Dev / Web Engineer</div>
+            </div>
+
+            <div class="status__row">
+              <div class="status__label">MAIN STACK</div>
+              <div class="status__value">ASP.NET Core + React</div>
+            </div>
+
+            <div class="status__row">
+              <div class="status__label">FOCUS</div>
+              <div class="status__value">CRUD / Auth / UI / DB</div>
+            </div>
+
+            <!-- “数値”は後から自由に変えてOK（RPG感のための演出） -->
+            <div class="bars">
+              <div class="bar">
+                <div class="bar__top">
+                  <span>HP（体力）</span><span>70</span>
+                </div>
+                <div class="bar__meter"><div class="bar__fill" style="width:70%"></div></div>
+              </div>
+
+              <div class="bar">
+                <div class="bar__top">
+                  <span>MP（集中）</span><span>55</span>
+                </div>
+                <div class="bar__meter"><div class="bar__fill" style="width:55%"></div></div>
+              </div>
+
+              <div class="bar">
+                <div class="bar__top">
+                  <span>ATK（実装力）</span><span>60</span>
+                </div>
+                <div class="bar__meter"><div class="bar__fill" style="width:60%"></div></div>
+              </div>
+
+              <div class="bar">
+                <div class="bar__top">
+                  <span>DEF（品質/保守）</span><span>45</span>
+                </div>
+                <div class="bar__meter"><div class="bar__fill" style="width:45%"></div></div>
+              </div>
+
+              <div class="bar">
+                <div class="bar__top">
+                  <span>INT（設計/理解）</span><span>50</span>
+                </div>
+                <div class="bar__meter"><div class="bar__fill" style="width:50%"></div></div>
+              </div>
+            </div>
+
+            <div class="status__note">
+              <span class="mono">TIP:</span> 数値は「今の自分の感覚」でOK。面接では伸びしろの説明材料になります。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="panel" id="skills">
+      <div class="panel__head">
+        <div class="panel__title">SKILLS</div>
+        <div class="panel__tag">Engineer Loadout</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel panel--inner">
+          <div class="minihead">Core</div>
+          <div class="pillbox">
+            <span class="pill">ASP.NET Core MVC</span>
+            <span class="pill">C#</span>
+            <span class="pill">React</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">SQL Server</span>
+          </div>
+        </div>
+
+        <div class="panel panel--inner">
+          <div class="minihead">Tools / Ops</div>
+          <div class="pillbox">
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">Docker（学習・検証）</span>
+            <span class="pill">REST / HTTP</span>
+            <span class="pill">Auth（Cookie/JWT学習）</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTS -->
+    <section class="panel" id="quests">
+      <div class="panel__head">
+        <div class="panel__title">QUESTS</div>
+        <div class="panel__tag">Next Missions</div>
+      </div>
+
+      <div class="questlist">
+        <div class="quest">
+          <div class="quest__badge">MAIN</div>
+          <div class="quest__body">
+            <div class="quest__title">React基礎〜Hooksの定着（作って覚える）</div>
+            <div class="quest__desc mono">useState / props / component設計 / 작은CRUD</div>
+          </div>
+        </div>
+
+        <div class="quest">
+          <div class="quest__badge quest__badge--sub">SUB</div>
+          <div class="quest__body">
+            <div class="quest__title">ASP.NET Core MVC：認証・画面遷移・DB設計を強化</div>
+            <div class="quest__desc mono">Cookie Auth / CRUD / SQL / validation</div>
+          </div>
+        </div>
+
+        <div class="quest">
+          <div class="quest__badge quest__badge--sub">SUB</div>
+          <div class="quest__body">
+            <div class="quest__title">転職保険：成果物を3つに増やす（小さく完成）</div>
+            <div class="quest__desc mono">“完成品”を積むのが最強の保険</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="panel" id="projects">
+      <div class="panel__head">
+        <div class="panel__title">PROJECTS</div>
+        <div class="panel__tag">Showcase</div>
+      </div>
+
+      <div class="projects">
+        <!-- ✅ 追加しやすい：この「project-card」をコピペして増やすだけ -->
+        <article class="project-card">
+          <div class="project-card__top">
+            <div class="project-card__title">予約管理システム</div>
+            <div class="project-card__tags">
+              <span class="tag">ASP.NET Core MVC</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Auth</span>
+            </div>
+          </div>
+
+          <p class="project-card__desc">
+            カレンダー予約・ログイン・動的メニューを含む業務系アプリを想定した構成。
+            予約登録で表示が変わるUIを実装。
+          </p>
+
+          <div class="project-card__meta">
+            <div class="meta">
+              <div class="meta__k">Highlight</div>
+              <div class="meta__v">UI状態管理 / DB連携 / 認証</div>
+            </div>
+            <div class="meta">
+              <div class="meta__k">Role</div>
+              <div class="meta__v">個人開発（設計〜実装）</div>
+            </div>
+          </div>
+
+          <div class="project-card__links">
+            <!-- 自分のリポジトリURLに置き換え -->
+            <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="link link--ghost" href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <div class="project-card__title">ポートフォリオ管理アプリ</div>
+            <div class="project-card__tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">React</span>
+              <span class="tag">GitHub</span>
+            </div>
+          </div>
+
+          <p class="project-card__desc">
+            Gitで作成した個人開発の実績を一覧化し、見どころ・URLを管理するWebアプリ構想。
+            「実績を増やすほど価値が積み上がる」設計を目指す。
+          </p>
+
+          <div class="project-card__meta">
+            <div class="meta">
+              <div class="meta__k">Highlight</div>
+              <div class="meta__v">CRUD / 画面設計 / 追加しやすさ</div>
+            </div>
+            <div class="meta">
+              <div class="meta__k">Status</div>
+              <div class="meta__v">Design / Build</div>
+            </div>
+          </div>
+
+          <div class="project-card__links">
+            <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="link link--ghost" href="#" target="_blank" rel="noreferrer">Spec</a>
+          </div>
+        </article>
+
+        <!-- ▼ ここに project-card をコピペして増やしていく -->
+      </div>
+
+      <div class="hint">
+        <div class="hint__title">How to add a new project</div>
+        <div class="hint__desc mono">
+          PROJECTS内の <span class="mono">project-card</span> を丸ごとコピー → タイトル/説明/タグ/リンクを更新。
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="panel" id="contact">
+      <div class="panel__head">
+        <div class="panel__title">CONTACT</div>
+        <div class="panel__tag">Links</div>
+      </div>
+
+      <div class="contact">
+        <a class="contact__item" href="https://github.com/Yuuki6152" target="_blank" rel="noreferrer">
+          <span class="contact__k">GitHub</span>
+          <span class="contact__v mono">@Yuuki6152</span>
+        </a>
+
+        <!-- 必要なら追加 -->
+        <!--
+        <a class="contact__item" href="https://qiita.com/xxxxx" target="_blank" rel="noreferrer">
+          <span class="contact__k">Qiita</span>
+          <span class="contact__v mono">@xxxxx</span>
+        </a>
+        -->
+      </div>
+
+      <div class="footer mono">© 2026 Yuuki — RPG Portfolio</div>
+    </section>
+  </main>
 </body>
 </html>
